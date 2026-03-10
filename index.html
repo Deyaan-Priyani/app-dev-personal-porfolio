@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deyaan's Portfolio ADC</title>
+    <!-- linking our stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- google fonts... playfair for headings, dm sans for body -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar... logo on the left, links on the right -->
+    <nav class="topbar">
+      <div class="logo">D.</div>
+      <ul class="navlinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- hero... flex puts the text + headshot side by side -->
+    <section id="home" class="herosection">
+      <div class="herotext">
+        <p class="greeting">Hello, I'm</p>
+        <h1 class="myname">Deyaan</h1>
+        <p class="tagline">
+          Developer &amp; Designer — building clean, purposeful things.
+        </p>
+        <!-- btn scrolls down to the about section -->
+        <a href="#about" class="btn">Learn More</a>
+      </div>
+      <div class="heropic">
+        <!-- swap this src w/ ur actual photo path -->
+        <img
+          src="images/IMG_6448 2.JPG"
+          alt="Deyaan's headshot"
+          class="headshot"
+        />
+      </div>
+    </section>
+
+    <!-- about... just a lil card talking abt myself -->
+    <section id="about" class="mainsection aboutme">
+      <h2 class="sectiontitle">About Me</h2>
+      <div class="aboutcard">
+        <p>
+          I'm a Computer Science student at the University of Maryland. I've
+          played for the USA U19 Cricket Team. I am currently a member of the
+          App Development Club at UMD, where I am learning full-stack
+          development and working on projects with other students. And a part of
+          BSE Scholars Program earning aspects of business, service, and
+          community, with coursework focused on leadership, innovation,
+          collaboration
+        </p>
+        <p>
+          When I'm not coding, you can find me playing pickleball, watching
+          cricket, or watching a TV show. I love watching anime occasionally
+          too.
+        </p>
+      </div>
+    </section>
+
+    <!-- experience... two cards, one per job/program -->
+    <section id="experience" class="mainsection">
+      <h2 class="sectiontitle">Experience</h2>
+      <div class="explist">
+        <!-- exp card 1 -->
+        <div class="expcard">
+          <div class="expheader">
+            <h3>Web Development Bootcamp</h3>
+            <span class="expdate">2026 — Present</span>
+          </div>
+          <p class="companyname">App Development Club @ UMD</p>
+          <p>
+            Selective program centered to work on project-based coursework in
+            full-stack development using React, JavaScript, FastAPI, and MongoDB
+          </p>
+        </div>
+
+        <!-- exp card 2 -->
+        <div class="expcard">
+          <div class="expheader">
+            <h3>Software Development Intern</h3>
+            <span class="expdate">2025 — 2025</span>
+          </div>
+          <p class="companyname">Lumi Source</p>
+          <p>
+            Assisted building an attendance management system in Java handling
+            500+ student records, using queues to track daily check-in/check-out
+            order and stacks to implement undo/redo features for adding and
+            removing students.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- skills... 3 groups in a flex row -->
+    <section id="skills" class="mainsection">
+      <h2 class="sectiontitle">Skills</h2>
+      <div class="skillsgrid">
+        <div class="skillbox">
+          <h3>Languages</h3>
+          <ul>
+            <li>HTML &amp; CSS</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>R</li>
+          </ul>
+        </div>
+
+        <div class="skillbox">
+          <h3>IDEs</h3>
+          <ul>
+            <li>VS Code</li>
+            <li>Eclipse</li>
+            <li>PyCharm</li>
+          </ul>
+        </div>
+
+        <!-- using ol here just to show the diff btwn ul and ol -->
+        <div class="skillbox">
+          <h3>Tools</h3>
+          <ol>
+            <li>Git &amp; GitHub</li>
+            <li>Excel</li>
+            <li>MATLAB</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact... centered, just a mailto link -->
+    <section id="contact" class="mainsection contactme">
+      <h2 class="sectiontitle">Get In Touch</h2>
+      <p class="contacttext">
+        I'm always open to new opportunities and internships. Feel free to reach
+        out!
+      </p>
+      <!-- opens default email app w/ my addr pre-filled -->
+      <a href="mailto:dpriyani@terpmail.umd.edu" class="btn">Reach Deyaan</a>
+    </section>
+
+    <!-- footer... copyright n hw label at the bottom -->
+    <footer class="footer">
+      <p>Copyright &copy; 2026 Deyaan. Bootcamp HW 1.</p>
+    </footer>
+  </body>
+</html>

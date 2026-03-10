@@ -1,0 +1,200 @@
+/* general stuff... resets n fonts */
+body {
+  background-color: #0d1117; /* dark navy bg... looks clean n professional */
+  color: #e0e0e0; /* off-white so it's not too harsh on the eyes */
+  font-family: "DM Sans", sans-serif;
+  margin: 0; /* removes default browser margin */
+  padding: 0;
+}
+
+/* headings use the fancy serif font */
+h1,
+h2,
+h3 {
+  font-family:
+    "Playfair Display", serif; /* different font from body... gives headings more character */
+  color: #ffffff;
+  margin-bottom: 16px; /* lil space below every heading */
+}
+
+/* body text is a lil muted... easier on the eyes */
+p {
+  color: #9aa5b4; /* lighter gray instead of full white... less strain */
+  margin-bottom: 12px; /* spacing btwn paragraphs */
+}
+
+/* links r gold colored, no underline by default */
+a {
+  color: #c9a96e; /* gold accent color used throughout the whole site */
+  text-decoration: none; /* removes the default ugly underline */
+}
+
+/* only show underline when hovering */
+a:hover {
+  text-decoration: underline;
+}
+
+/*  navbar  */
+/* flex makes the logo + links sit side by side */
+.topbar {
+  display: flex; /* turns it into a flex container */
+  justify-content: space-between; /* pushes logo to left, links to right */
+  align-items: center; /* vertically centers both items */
+  background-color: #070b14; /* slightly darker than the body bg */
+  padding: 16px 40px; /* top/bottom padding, left/right padding */
+}
+
+.logo {
+  font-size: 1.5rem; /* rem is relative to the root font size... 1.5x the default */
+  color: #c9a96e;
+}
+
+/* gotta remove default list styles n lay em out horizontally */
+.navlinks {
+  list-style: none; /* removes the bullet points from the <ul> */
+  display: flex; /* lines the <li> items up in a row */
+  gap: 24px; /* space btwn each nav link */
+  margin: 0; /* browsers add default margin to lists... resetting that */
+  padding: 0; /* same deal w/ padding */
+}
+
+.navlinks a {
+  color: #9aa5b4; /* muted so they don't compete w/ the logo */
+}
+
+/*  hero  */
+/* this is the main flex section... headshot + text side by side */
+.herosection {
+  display: flex;
+  align-items: center; /* vertically centers the two columns */
+  justify-content: center; /* horizontally centers the whole thing */
+  gap: 60px; /* space btwn text and headshot */
+  padding: 80px 40px; /* lots of vertical padding so it feels spacious */
+}
+
+/* big name lol */
+.myname {
+  font-size: 3rem; /* 3x the default... makes it the biggest thing on the page */
+}
+
+/* small gold text above the name */
+.greeting {
+  color: #c9a96e;
+}
+
+/* tagline below the name */
+.tagline {
+  margin-bottom: 28px;
+}
+
+/* round headshot w/ gold border */
+.headshot {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%; /* 50% makes any square img into a circle */
+  object-fit: cover; /* crops the img to fit without stretching */
+  border: 3px solid #c9a96e;
+}
+
+/*  button  */
+/* inline-block so padding actually works on an <a> tag */
+.btn {
+  display: inline-block; /* <a> is inline by default... this lets padding apply properly */
+  background-color: #c9a96e;
+  color: #0d1117; /* dark text on gold bg for contrast */
+  padding: 10px 24px; /* top/bottom then left/right */
+  border-radius: 4px; /* slight rounded corners */
+  text-decoration: none; /* just in case... removes underline */
+}
+
+/* sections */
+/* shared styles for all the sections... centered w/ padding */
+.mainsection {
+  padding: 60px 40px;
+  max-width: 860px; /* stops content from stretching too wide on big screens */
+  margin: 0 auto; /* auto left/right margin = horizontally centered */
+}
+
+/* gold underline on every section title */
+.sectiontitle {
+  font-size: 1.8rem;
+  border-bottom: 2px solid #c9a96e; /* acts as a decorative underline */
+  padding-bottom: 8px; /* space btwn the text and the border line */
+  margin-bottom: 24px; /* space below the title before content starts */
+}
+
+/*  about  */
+/* just a dark card... nothing crazy */
+.aboutcard {
+  background-color: #111827; /* slightly lighter than the body... creates a card effect */
+  border-radius: 8px;
+  padding: 24px; /* breathing room inside the card */
+}
+
+/* experience  */
+/* gold left border makes it look like a timeline-ish thing */
+.expcard {
+  background-color: #111827;
+  border-left: 3px solid #c9a96e; /* the gold stripe on the left side */
+  border-radius: 6px;
+  padding: 20px 24px;
+  margin-bottom: 20px; /* gap btwn cards... simpler than using a wrapper w/ gap */
+}
+
+/* job title on the left, date on the right */
+.expheader {
+  display: flex;
+  justify-content: space-between; /* pushes title and date to opposite ends */
+  align-items: center;
+}
+
+/* small gold date text */
+.expdate {
+  color: #c9a96e;
+  font-size: 0.85rem; /* slightly smaller than normal text */
+}
+
+/* company name in gold below the title */
+.companyname {
+  color: #c9a96e;
+  margin-bottom: 8px;
+}
+
+/*  skills  */
+/* 3 cols side by side... flex does the work */
+.skillsgrid {
+  display: flex;
+  gap: 20px; /* space btwn the 3 skill boxes */
+}
+
+.skillbox {
+  background-color: #111827;
+  border-radius: 8px;
+  padding: 20px 24px;
+  flex: 1; /* each box takes up equal width automatically */
+}
+
+.skillbox h3 {
+  color: #c9a96e; /* gold category label */
+}
+
+/* works for both ul + ol in skills */
+.skillbox ul,
+.skillbox ol {
+  padding-left: 18px; /* indents the list so bullets/numbers show */
+  color: #9aa5b4;
+}
+
+/*  contact  */
+/* centered... pretty straightforward */
+.contactme {
+  text-align: center; /* centers all the text + the button */
+}
+
+/*  footer */
+/* small lil footer at the bottom... nothing special */
+.footer {
+  text-align: center;
+  padding: 24px;
+  color: #9aa5b4; /* muted so it doesn't draw attention */
+}
